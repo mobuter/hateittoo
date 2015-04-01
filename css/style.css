@@ -1,0 +1,47 @@
+body {
+	background: url(img/bg_texture.jpg) repeat;
+}
+
+#container {
+	width: 1000px;
+	min-height: 889px;
+	margin: 0 auto;
+	background: url(img/bg.jpg) no-repeat center;
+}
+
+#logo {
+	display: block;
+	margin: 80px auto;
+}
+
+ul {
+	border-top: 1px solid rgba(255,255,255,0.1);
+	padding: 30px 0 0 0;
+	width: 480px;
+	margin: 0 auto;
+}
+
+ul li {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 0;
+}
+
+ul li a {
+	display: block;
+	opacity: 0.7;
+	
+	transition-duration: 0.7s;
+	-webkit-transition-duration: 0.7s;
+	-moz-transition-duration: 0.7s;
+}
+
+ul li a:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+ul li a img {
+	margin: 0;
+	padding: 0;
+}
