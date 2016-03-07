@@ -15,7 +15,10 @@ $htmlOutput =
 '<!DOCTYPE html>'
 .html(
 	head(
-		'<link rel="stylesheet" type="text/css" href="css/global.css">
+		'
+		<title>Hate it Too</title>
+		<meta name="keywords" content="punk,rock,melodic,quebec,band,music,purple,mountains,about,time">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<script src="js/jquery-1.12.1.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">'
