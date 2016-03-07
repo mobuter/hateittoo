@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tour>
 	<show>
-		<date>26 March 2016</date>
+		<date>26 March 2016 - 21:00</date>
 		<location>Trois-Pistoles</location>
-		<facebook>https://www.facebook.com/hateittoo</facebook>
+		<facebook>https://www.facebook.com/events/198970163794912/</facebook>
 	</show>
 	
 	<show>
-		<date>26 March 2016</date>
-		<location>Trois-Pistoles</location>
+		<date>27 March 2016 - 21:00</date>
+		<location>L'anti Bar & Specatles - Quebec City</location>
+		<facebook>https://www.facebook.com/events/446963218844121/</facebook>
 	</show>
+	
+	<show>
+		<date>13 May 2016</date>
+		<location>L'anti Bar & Specatles - Quebec City</location>
+		<facebook>https://www.facebook.com/events/542656949249276/</facebook>
+	</show>
+	
 </tour>
