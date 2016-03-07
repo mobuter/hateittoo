@@ -25,7 +25,7 @@ $htmlOutput =
 		
 		<meta property="og:title" content="Hate it Too"/>
 		<meta property="og:image" content="http://www.hateittoo.com/css/img/facebook-cover.jpg"/>
-		<meta property="og:url" content="ttp://www.hateittoo.com/"/>
+		<meta property="og:url" content="http://www.hateittoo.com/"/>
 		
 		'
 	)
