@@ -149,16 +149,20 @@ $onReadyJs = "
 		return false;
 	});
 	
-	$(window).scroll(function() {
-		$('.parallax').each(function() {
-			var element = '.' + $(this).data('element'),speed = $(this).data('speed'),direction = $(this).data('direction'),method = $(this).data('method'),element_position = $(this).offset().top, element_height = $(this).outerHeight(), window_position = $(window).scrollTop(),window_height = $(window).height(),position = 0;
-			if(element_position <= (window_position + window_height) && window_position <= element_position + element_height ) {								
-				position = ((window_position + window_height) - element_position) /100 * speed;
-				$(element).css({ 'background-position-y':  direction + position + 'px' });
-			}
+	if (!/Mobi/.test(navigator.userAgent)) {
+		$(window).scroll(function() {
+			$('.parallax').each(function() {
+				var element = '.' + $(this).data('element'),speed = $(this).data('speed'),direction = $(this).data('direction'),method = $(this).data('method'),element_position = $(this).offset().top, element_height = $(this).outerHeight(), window_position = $(window).scrollTop(),window_height = $(window).height(),position = 0;
+				if(element_position <= (window_position + window_height) && window_position <= element_position + element_height ) {								
+					position = ((window_position + window_height) - element_position) /100 * speed;
+					$(element).css({ 'background-position-y':  direction + position + 'px' });
+				}
+			});
+			
 		});
-		
-	});
+	}
+	
+	
 	
 	initWebsite();
 	$(window).resize(function() { initWebsite(); });
