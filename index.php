@@ -88,7 +88,18 @@ $htmlOutput =
 		.div(
 			div(
 				div(
-					img('css/img/cover-purple.png')
+					div(
+						div(
+							img('css/img/cover-purple.png')
+						,'class="onglet"')
+						.div(
+							p(span("Produced By")."Raphaël Malenfant & Hate it Too")
+							.p(span("Recorded at")."Studio Broil")
+							.p(span("Mixed and Masterised By")."Jeff Fortin @ Badass Studio")
+							.p(span("Artowork By")."Sébastien Thériault @ Sterio Design")
+						,'class="onglet"')
+					,'class="onglet-wrapper"')
+					.anchor(span("Album details").span("Back to cover"),'','class="trigger-link"')
 				,'class="right-album"')
 				.div(
 					h2("Purple".span(" Mountains"))
@@ -103,7 +114,17 @@ $htmlOutput =
 		.div(
 			div(
 				div(
-					img('css/img/cover-about-time.png')
+					div(
+						div(
+							img('css/img/cover-about-time.png')
+						,'class="onglet"')
+						.div(
+							p(span("Produced By")."Raphaël Malenfant & Hate it Too")
+							.p(span("Recorded at")."Studio Broil")
+							.p(span("Mixed and Masterised By")."Raphaël Malenfant")
+						,'class="onglet"')
+					,'class="onglet-wrapper"')
+					.anchor(span("Album details").span("Back to cover"),'','class="trigger-link"')
 				,'class="left-album"')
 				.div(
 					h2("It's about".span(" time"))
@@ -130,6 +151,12 @@ $htmlOutput =
 );
 
 $onReadyJs = "
+	$('.trigger-link').click(function() {
+		$(this).parent().toggleClass('trigger-action');
+		return false;
+	});
+
+
 	$('.menu-button').click(function() {
 		$('.menu-wrapper').toggleClass('move-in');
 		return false;
@@ -164,7 +191,6 @@ $onReadyJs = "
 					$(element).css({ 'background-position-y':  direction + position + 'px' });
 				}
 			});
-			
 		});
 	}
 	

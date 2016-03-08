@@ -546,7 +546,8 @@ html, body {
   .purple-mountains .right-album {
     float: right;
     width: 45%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    overflow: hidden; }
     @media screen and (max-width: 960px) {
       .purple-mountains .right-album {
         float: none;
@@ -557,6 +558,12 @@ html, body {
         width: 90%; } }
     .purple-mountains .right-album img {
       width: 100%; }
+    .purple-mountains .right-album .onglet p {
+      color: #000; }
+    .purple-mountains .right-album .onglet:last-of-type {
+      background: rgba(0, 0, 0, 0.05); }
+    .purple-mountains .right-album .trigger-link {
+      color: #000; }
 
 .about-time {
   position: relative;
@@ -636,7 +643,8 @@ html, body {
   .about-time .left-album {
     float: left;
     width: 45%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    overflow: hidden; }
     @media screen and (max-width: 960px) {
       .about-time .left-album {
         float: none;
@@ -647,6 +655,93 @@ html, body {
         width: 90%; } }
     .about-time .left-album img {
       width: 100%; }
+    .about-time .left-album .onglet p {
+      color: #FFF; }
+    .about-time .left-album .onglet:last-of-type {
+      background: rgba(255, 255, 255, 0.05); }
+    .about-time .left-album .trigger-link {
+      color: #FFF; }
+      .about-time .left-album .trigger-link:before {
+        background: url(img/black-arrow.png) no-repeat;
+        background-position: -10px 0; }
+
+.right-album .onglet-wrapper, .left-album .onglet-wrapper {
+  display: table;
+  width: 200%; }
+  .right-album .onglet-wrapper .onglet, .left-album .onglet-wrapper .onglet {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    transition: transform 500ms ease;
+    -webkit-transition: -webkit-transform 500ms ease;
+    -ms-transition: transform 500ms ease; }
+    .right-album .onglet-wrapper .onglet img, .left-album .onglet-wrapper .onglet img {
+      width: 100%; }
+    .right-album .onglet-wrapper .onglet p, .left-album .onglet-wrapper .onglet p {
+      font-family: "Slabo 13px", serif;
+      display: block;
+      font-size: 18px;
+      margin-bottom: 30px; }
+      @media screen and (max-width: 640px) {
+        .right-album .onglet-wrapper .onglet p, .left-album .onglet-wrapper .onglet p {
+          font-size: 16px;
+          margin-bottom: 15px; } }
+      .right-album .onglet-wrapper .onglet p span, .left-album .onglet-wrapper .onglet p span {
+        font-size: 16px;
+        display: block;
+        color: #d36f45; }
+        @media screen and (max-width: 640px) {
+          .right-album .onglet-wrapper .onglet p span, .left-album .onglet-wrapper .onglet p span {
+            font-size: 18px; } }
+    .right-album .onglet-wrapper .onglet:last-of-type, .left-album .onglet-wrapper .onglet:last-of-type {
+      padding: 20px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box; }
+.right-album .trigger-link, .left-album .trigger-link {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Slabo 13px", serif;
+  overflow: hidden; }
+  .right-album .trigger-link span, .left-album .trigger-link span {
+    display: inline-block;
+    transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease;
+    -webkit-transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease;
+    -ms-transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease; }
+    .right-album .trigger-link span:last-of-type, .left-album .trigger-link span:last-of-type {
+      opacity: 0; }
+  .right-album .trigger-link:before, .left-album .trigger-link:before {
+    position: relative;
+    transition: transform 500ms ease;
+    -webkit-transition: transform 500ms ease;
+    -ms-transition: transform 500ms ease;
+    top: 3px;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background: url(img/black-arrow.png) no-repeat;
+    margin-right: 10px; }
+.right-album.trigger-action .onglet, .left-album.trigger-action .onglet {
+  transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0); }
+.right-album.trigger-action .trigger-link:before, .left-album.trigger-action .trigger-link:before {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg); }
+.right-album.trigger-action .trigger-link span, .left-album.trigger-action .trigger-link span {
+  transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0); }
+  .right-album.trigger-action .trigger-link span:first-of-type, .left-album.trigger-action .trigger-link span:first-of-type {
+    opacity: 0; }
+  .right-album.trigger-action .trigger-link span:last-of-type, .left-album.trigger-action .trigger-link span:last-of-type {
+    opacity: 1; }
 
 .contact {
   position: relative;
